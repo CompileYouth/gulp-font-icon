@@ -1,0 +1,34 @@
+{
+	"name": "gulp-font-icon",
+	"version": "0.0.1",
+	"author": {
+		"name": "Peng Chen",
+		"url": "https://github.com/CompileYouth"
+	},
+	"homepage": "https://github.com/CompileYouth/gulp-font-icon",
+	"description": "A gulp plugin to generate icon fonts from SVG files.",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/CompileYouth/gulp-font-icon.git"
+	},
+	"bugs": "https://github.com/CompileYouth/gulp-font-icon/issues",
+	"dependencies": {
+
+	},
+	"devDependencies" : {
+
+	},
+	"keywords": [
+		"gulp",
+		"gulpplugin",
+		"iconfont",
+		"icon",
+		"font",
+		"svg"
+	],
+	"license": "MIT",
+	"engines": {
+		"node": ">= 0.10.0"
+	}
+}
