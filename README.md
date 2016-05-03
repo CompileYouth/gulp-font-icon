@@ -1,4 +1,4 @@
-# gulp-font-icon
+# gulp-font-icon --- under developing
 
 `gulp-font-icon` is a gulp plugin to generate icon fonts from SVG files.
 
