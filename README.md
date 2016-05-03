@@ -21,3 +21,20 @@ Then, add it to your gulpfile.js:
 			}))
 			.pipe(gulp.dest("assets/res/icons/"));
 	});
+
+## API 
+
+### options.fontFamily
+
+Type: `String` Default value: "fontIcon"
+
+
+
+### options.fontAlias
+
+Type： `String` Default value: "fi"
+
+
+### options.formats
+
+Type: `Array` Default value: ["ttf", "tof", "woff", "woff2", "svg"]
