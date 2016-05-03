@@ -1,10 +1,13 @@
 "use strict";
 
-var gutil = require("gulp-util"),
-	through = require("through2")
+var gutil = require("gulp-util");
+var PluginError = gutil.PluginError;
+var through = require("through2");
 
-;
+const PLUGIN_NAME = "gulp-font-icon";
 
-module.exports = function(options) {
+function gulpFontIcon(options) {
 	
 };
+
+module.exports = gulpFontIcon;
