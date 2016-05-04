@@ -28,8 +28,6 @@ function gulpFontIcon(options) {
 	var outStream = null;
 	var duplexStream = null;
 
-	options = options || {};
-
 	inStream = svgicons2svgfont(options);
 
 	outStream = inStream
