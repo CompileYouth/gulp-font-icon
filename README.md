@@ -1,4 +1,4 @@
-# gulp-font-icon --- under developing
+# gulp-font-icon
 
 `gulp-font-icon` is a gulp plugin to generate icon fonts from SVG files.
 
@@ -21,19 +21,32 @@ Then, add it to your gulpfile.js:
 			.pipe(gulp.dest("assets/res/icons/"));
 	});
 
+Then, it will generate `myfont.ttf`, `myfont.eot`, `myfont.woff`, `myyfont.woff2`, `myfont.svg` and `myfont.css`.
+
+If you want to generate `index.html` for a demo, you have to do like this:
+
+	var fontIcon = require("gulp-font-icon");
+	var htmlGen = fontIcon.htmlGen;	
+
+	gulp.task("fontIcon", function() {
+		const options = {
+			fontFamily: "myfont",
+			fontAlias: "mf"
+		};
+		return gulp.src(["src/res/icons/*.svg"])
+			.pipe(htmlGen(options))
+			.pipe(fontIcon(options))
+			.pipe(gulp.dest("assets/res/icons/"));
+	});
+
 ## API 
 
 ### options.fontFamily
 
 Type: `String` Default value: "fontIcon"
 
-
-
 ### options.fontAlias
 
 Type： `String` Default value: "fi"
 
 
-### options.formats
-
-Type: `Array` Default value: ["ttf", "tof", "woff", "woff2", "svg"]
