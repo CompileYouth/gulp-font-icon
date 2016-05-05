@@ -16,8 +16,7 @@ Then, add it to your gulpfile.js:
 		return gulp.src(["src/res/icons/*.svg"])
 			.pipe(fontIcon({
 				fontFamily: "myfont",
-				fontAlias: "mf",
-				formats: ["ttf", "eot", "woff"]
+				fontAlias: "mf"
 			}))
 			.pipe(gulp.dest("assets/res/icons/"));
 	});
