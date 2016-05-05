@@ -11,7 +11,7 @@ First, install gulp-font-icon as a development dependency:
 Then, add it to your gulpfile.js:
 
 	var fontIcon = require("gulp-font-icon");
-	
+
 	gulp.task("fontIcon", function() {
 		return gulp.src(["src/res/icons/*.svg"])
 			.pipe(fontIcon({
