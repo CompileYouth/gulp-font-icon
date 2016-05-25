@@ -15,7 +15,7 @@ Then, add it to your gulpfile.js:
 	gulp.task("fontIcon", function() {
 		return gulp.src(["src/res/icons/*.svg"])
 			.pipe(fontIcon({
-				fontFamily: "myfont",
+				fontName: "myfont",
 				fontAlias: "mf"
 			}))
 			.pipe(gulp.dest("assets/res/icons/"));
@@ -26,11 +26,11 @@ Then, it will generate `myfont.ttf`, `myfont.eot`, `myfont.woff`, `myyfont.woff2
 If you want to generate `index.html` for a demo, you have to do like this:
 
 	var fontIcon = require("gulp-font-icon");
-	var htmlGen = fontIcon.htmlGen;	
+	var htmlGen = fontIcon.htmlGen;
 
 	gulp.task("fontIcon", function() {
 		const options = {
-			fontFamily: "myfont",
+			fontName: "myfont",
 			fontAlias: "mf"
 		};
 		return gulp.src(["src/res/icons/*.svg"])
@@ -39,14 +39,12 @@ If you want to generate `index.html` for a demo, you have to do like this:
 			.pipe(gulp.dest("assets/res/icons/"));
 	});
 
-## API 
+## API
 
-### options.fontFamily
+### options.fontName
 
 Type: `String` Default value: "fontIcon"
 
 ### options.fontAlias
 
 Type： `String` Default value: "fi"
-
-

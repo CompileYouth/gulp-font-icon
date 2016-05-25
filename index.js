@@ -23,8 +23,8 @@ function gulpFontIcon(options) {
     options = options || {};
 
     inStream = iconfontCss({
-        fontName: options.fontFamily,
-        targetPath: options.fontFamily + ".css",
+        fontName: options.fontName,
+        targetPath: options.fontName + ".css",
         fontPath: '',
         cssClass: options.fontAlias
     });
